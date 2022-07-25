@@ -24,3 +24,42 @@ def generate_question(english,right_answer,option_1,option_2):
   global score
   print(white + "What is the correct word for",english, "in te reo")
   random_sequence = random.randint(1,3)
+  #Printing the options and the answers
+  if(random_sequence == 1):
+    print("A", option_1)
+    print("B", option_2)
+    print("C", right_answer)
+    answer = input().lower()
+    if answer == "c":
+      print(green + "Correct!")
+      score += 1
+      print(cyan + "Score:", score)
+    else:
+      print(red + "Incorrect!")
+      print(cyan + "Score:", score)
+
+  if(random_sequence == 2):
+    print("A", option_1)
+    print("B", right_answer)
+    print("C", option_2)
+    answer = input().lower()
+    if answer == "b":
+      print(green + "Correct!")
+      score += 1
+      print(cyan + "Score:", score)
+    else:
+      print(red + "Incorrect!")
+      print(cyan + "Score:", score)
+
+  if(random_sequence == 3):
+    print("A", right_answer)
+    print("B", option_1)
+    print("C", option_2)
+    answer = input().lower()
+    if answer == "a":
+      print(green + "Correct!")
+      score += 1
+      print(cyan + "Score:", score)
+    else:
+      print(red + "Incorrect!")
+      print(cyan + "Score:", score)
