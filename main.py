@@ -19,3 +19,8 @@ english = ["New Zealand" , "Family" , "Food" , "Dog" , "Love"]
 right_answer = ["Aotearoa" , "Whanau" , "Kai" , "Kuri" , "Aroha"]
 option_1 = ["Tāmaki Makaurau" , "Waka" , "Kapai" , "Ngeru" , "Aho"]
 option_2 = ["Te Whanganui a Tara" , "Iwi" , "Wai" , "Hipi" , "Hama"]
+#Printing the question and making a question randomizer
+def generate_question(english,right_answer,option_1,option_2):
+  global score
+  print(white + "What is the correct word for",english, "in te reo")
+  random_sequence = random.randint(1,3)
