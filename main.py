@@ -63,3 +63,10 @@ def generate_question(english,right_answer,option_1,option_2):
     else:
       print(red + "Incorrect!")
       print(cyan + "Score:", score)
+
+#Generating 5 questions and taking answers from the list
+for j in range (0,5):
+  generate_question(english[j],right_answer[j],option_1[j],option_2[j])
+
+#Printing the score
+print(Bpurple + "\nTotal score:", score,"\nWell done!")
